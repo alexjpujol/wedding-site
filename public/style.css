@@ -7,12 +7,18 @@
     src: url(./fonts/Demo_ConeriaScript.ttf)
 }
 
+@font-face {
+    font-family: Pitch;
+    src: url(./fonts/Courier10PitchBT-Roman.otf)
+}
+
+
 /* 
     Nav Bar
 */
 
 nav {
-    font-family: Coneria-Script;
+    font-family: Pitch;
     font-size: 1.5em
 }
 
@@ -37,9 +43,13 @@ nav a:hover {
 }
 
 #home_h1 {
-    font-family: Coneria-Script;
+    font-family: Pitch;
     text-align: center;
     font-size: 3em
+}
+
+#home_countdown {
+    font-family: Pitch
 }
 
 #home_image {
@@ -53,11 +63,15 @@ nav a:hover {
 
 .image_gallery {
     text-align: center;
-    width: auto
+    width: auto;
+    /* just an example here */
+    border: 1px solid black;
+    box-shadow: 0 8px 6px -6px black
 }
 
 .image_gallery img {
     width: 350px;
+    height: auto
 }
 
 .photo_description {

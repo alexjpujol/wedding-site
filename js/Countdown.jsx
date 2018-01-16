@@ -5,7 +5,8 @@ class Countdown extends React.Component {
     super(props);
 
     this.state = {
-      difference: ''
+      difference: '',
+      currentTime: new Date()
     };
   }
 
@@ -18,16 +19,25 @@ class Countdown extends React.Component {
   }
 
   calculateDifference() {
-    const weddingTime = new Date(2018, 9, 13, 18);
+    const weddingTime = new Date(2018, 9, 13, 18).getTime();
+    const currentTime = new Date().getTime();
+    const difference = weddingTime - currentTime; 
+    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((difference % (1000 * 60)) / 1000); 
     this.setState({
-      difference: weddingTime
+      daysTil: days,
+      hoursTil: hours,
+      minutesTil: minutes,
+      secondsTil: seconds 
     });
   }
 
   render() {
     return (
       <div>
-        <h1>{this.state.difference.toString()}</h1>
+        <h1 id="home_countdown">{this.state.daysTil} days, {this.state.hoursTil} hours, {this.state.minutesTil} minutes, {this.state.secondsTil} seconds</h1>
       </div>
     );
   }
