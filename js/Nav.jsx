@@ -17,15 +17,15 @@ const Wrapper = styled.nav`
 `;
 
 const Nav = () => (
-    <Wrapper>
-        <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/photos">Photos</Link></li>
-            <li><Link to="/travel">Travel</Link></li>
-            <li><Link to="/weather">Weather</Link></li>
-            <li><Link to="/registry">Registry</Link></li>
-        </ul>
-    </Wrapper>
-)
+  <Wrapper>
+    <ul>
+      <li><Link to="/">Home</Link></li>
+      <li><Link to="/photos">Photos</Link></li>
+      <li><Link to="/travel">Travel</Link></li>
+      <li><Link to="/weather">Weather</Link></li>
+      <li><Link to="/registry">Registry</Link></li>
+    </ul>
+  </Wrapper>
+);
 
 export default Nav;

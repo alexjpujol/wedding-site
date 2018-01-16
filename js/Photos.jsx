@@ -12,13 +12,13 @@ const Wrapper = styled.div`
 `;
 
 const Photos = () => (
-    <div>
-        <Nav />
-        <Wrapper>
-        {posters.photos.map((poster) => <PhotoCard key={poster.id} {...poster} />)}
-        </Wrapper>
+  <div>
+    <Nav />
+    <Wrapper>
+      {posters.photos.map(poster => <PhotoCard key={poster.id} {...poster} />)}
+    </Wrapper>
 
-    </div>
-)
+  </div>
+);
 
 export default Photos;
