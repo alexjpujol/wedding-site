@@ -12,6 +12,11 @@
     src: url(./fonts/Courier10PitchBT-Roman.otf)
 }
 
+body {
+    font-family: Pitch;
+    background-color: #FDF3E7
+}
+
 
 /* 
     Nav Bar
@@ -39,11 +44,10 @@ nav a:hover {
 
 .container {
     width: 100%;
-    text-align: center
+    text-align: center;
 }
 
 #home_h1 {
-    font-family: Pitch;
     text-align: center;
     font-size: 3em
 }
@@ -53,7 +57,8 @@ nav a:hover {
 }
 
 #home_image {
-    height: 80vh;
+    max-height: 80vh;
+    max-width: 80%
 
 }
 

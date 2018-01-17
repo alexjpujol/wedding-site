@@ -32,6 +32,7 @@ class Countdown extends React.Component {
       minutesTil: minutes,
       secondsTil: seconds 
     });
+    // TODO: update time function so if ho
   }
 
   render() {

@@ -9,9 +9,14 @@ const Wrapper = styled.nav`
 
     ul {
         display: flex;
-        flex-flow: row;
+        flex-flow: row wrap;
         justify-content: space-around;
         list-style-type: none;
+
+      li {
+        margin-right: 1em
+      }
+
     }
 
 `;
